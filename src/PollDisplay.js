@@ -2,26 +2,22 @@
 
 import { useState } from "react";
 
-const data = {
-  question: "What is your favorite programming language?",
+function PollDisplay({ val, changeUser }) {
+  const data = {
+    question: "What is your favorite programming language?",
 
-  choices: [
-    { id: 1, label: "JavaScript", votes: 0 },
+    choices: [
+      { id: 1, label: "JavaScript", votes: 0 },
 
-    { id: 2, label: "Python", votes: 0 },
+      { id: 2, label: "Python", votes: 0 },
 
-    { id: 3, label: "Java", votes: 0 },
+      { id: 3, label: "Java", votes: 0 },
 
-    { id: 4, label: "C#", votes: 0 },
-  ],
-};
-
-function PollDisplay() {
-  const [vote, setVote] = useState(0);
-
-  const handlingVote = () => {
-    setVote((prevVote) => prevVote + 1);
+      { id: 4, label: "C#", votes: 0 },
+    ],
   };
+
+  const [vote, setVote] = useState(data);
 
   return (
     <>

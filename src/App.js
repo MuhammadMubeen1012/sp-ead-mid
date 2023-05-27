@@ -2,6 +2,7 @@
 import AnotherUserParticipation from "./AnotherUserParticipation";
 import "./App.css";
 import PollDisplay from "./PollDisplay";
+import Timer from "./Timer";
 import UserParticipation from "./UserParticipation";
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <>
       <h1>Welcome to Polling Portal</h1>
       {/* <PollDisplay /> */}
-      <UserParticipation />
-      <AnotherUserParticipation />
+      {/* <UserParticipation />
+      <AnotherUserParticipation /> */}
+      <Timer />
     </>
   );
 }
